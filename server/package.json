@@ -1,0 +1,14 @@
+{
+  "name": "remotesarah",
+  "version": "0.1.0",
+  "description": "Launch and handle speak sarah component throught a simple http server",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Olivier Revelat",
+  "dependencies": {
+    "tree-kill": "latest"
+  }
+}

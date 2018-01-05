@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('win-speak-remote-config',{
+        category: 'config',
+        defaults: {
+            name:       { value: undefined },
+            remoteip:    { value: undefined },
+            remoteport:    { value: undefined }
+        },
+        label: function() { return this.name || "SARAH config"; }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="win-speak-remote-config">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-process"><i class="icon-tag"></i> Remote IP</label>
+        <input type="text" id="node-config-input-remoteip" placeholder="127.0.0.1">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-process"><i class="icon-tag"></i> Remote Port</label>
+        <input type="text" id="node-config-input-remoteport" placeholder="10002">
+    </div>
+</script>
